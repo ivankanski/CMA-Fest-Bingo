@@ -1,6 +1,8 @@
 # Welcome to NASBA CMA Fest Bingo!
 ## Application Overview
-NASBA CMA Fest Bingo is a simple responsive web app that generates a printable CMA Fest bingo card. 
+NASBA CMA Fest Bingo is a simple responsive web app that generates a printable CMA Fest bingo card.
+
+Load `index.php` to test output.
 
 ## Objectives
 1. The code in this simple web app is written in a procedure style. Please refactor it so that it is object oriented.
@@ -23,7 +25,7 @@ In your submission, please indicate the following:
    * I discovered that you never want to use array_rand() in PHP 5. It produces very non-random results and was fixed in PHP 7. Fortunately I realized an easier way to achieve randomization without array_rand() simply by using shuffle(). Another alternative would be to use mt_rand() to generate a set of random keys and is a good substitute for the older rand() function which is based on the same randomization library that array_rand() uses.
 
 3. How you tested your code:
-   * Used MAMP for local server testing
+   * Used MAMP PHP 5.6 for local server testing
    * Debugged front end code and responsive layout with Chrome developer inspect panel
    * Tailed the PHP log for errors
    * Compile errors displayed in PHP Storm and php lint on command line
