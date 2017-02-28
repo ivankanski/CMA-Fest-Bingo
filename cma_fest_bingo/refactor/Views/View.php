@@ -59,26 +59,6 @@ class View {
         return $output;
     }
 
-    /*
-     * Merges the content from an array of views.
-     * @param array $views_arr -  Array of View objects to merge
-     * @param string $separator - the string that is used between each View object
-     * @return string
-     */
-    static public function merge($views_arr, $separator = "\n") {
-
-        $output = '';
-
-        foreach ($views_arr as $view) {
-            if (get_class($view) !== "View") {
-                $content = 'Incorrect type, expected View.';
-            }else{
-                $content = $view->output();
-            }
-            $output .= $content . $separator;
-        }
-
-        return $output;
-    }
+   
 }
 
