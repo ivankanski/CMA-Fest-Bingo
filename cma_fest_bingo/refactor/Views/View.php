@@ -7,7 +7,7 @@
  */
 namespace Views;
 
-class View {
+class view {
 
     const TAG_OPEN  = '{{';
     const TAG_CLOSE = '}}';
