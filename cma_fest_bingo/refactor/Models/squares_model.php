@@ -4,7 +4,7 @@
  */
 namespace Models;
 
-class SquaresModel {
+class squares_model {
     
     public $count;
 

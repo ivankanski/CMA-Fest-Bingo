@@ -7,7 +7,7 @@
  */
 namespace Classes;
 
-class CmaFestBingo {
+class cma_bingo {
 
     const       GRID_SIZE       = 5; // Number of rows and columns in grid
     const       STR_LEN_1       = 13;
@@ -29,7 +29,7 @@ class CmaFestBingo {
 
             $this->width_pct = 100/self::GRID_SIZE;
             $this->square_ct = pow(self::GRID_SIZE,2);
-            $this->squares_model = new \Models\SquaresModel();
+            $this->squares_model = new \Models\sqares_model();
 
         try {
             $this->squares_model->validate_str_length(self::STR_LEN_MAX);
@@ -43,7 +43,7 @@ class CmaFestBingo {
 
         $this->squares_arr = $this->squares_model->get_random($this->square_ct);
 
-        $view       = new \Views\View('Views/bingo.tpl');
+        $view       = new \Views\view('Views/bingo.tpl');
         $output     = '<div class="card">';
         $key        = 0;
 
