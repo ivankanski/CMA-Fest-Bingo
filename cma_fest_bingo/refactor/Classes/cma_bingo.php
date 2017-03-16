@@ -29,7 +29,7 @@ class cma_bingo {
 
             $this->width_pct = 100/self::GRID_SIZE;
             $this->square_ct = pow(self::GRID_SIZE,2);
-            $this->squares_model = new \Models\sqares_model();
+            $this->squares_model = new \Models\squares_model();
 
         try {
             $this->squares_model->validate_str_length(self::STR_LEN_MAX);
