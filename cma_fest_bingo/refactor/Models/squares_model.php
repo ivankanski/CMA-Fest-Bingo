@@ -2,7 +2,6 @@
 /**
  * Class SquaresModel
  */
-namespace Models;
 
 class squares_model {
     
