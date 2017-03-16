@@ -6,9 +6,7 @@
  * Time: 10:13 PM
  */
 
-// Autoload PHP classes by namespace, subdir and file extension
-spl_autoload_extensions(".php");
-spl_autoload_register();
+require_once('Classes/cma_bingo.php');
 
 $bingo = new cma_bingo();
 

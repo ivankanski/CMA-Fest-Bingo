@@ -5,7 +5,8 @@
  * Date: 2/25/17
  * Time: 1:32 PM
  */
-namespace Classes;
+require_once('Models/squares_model.php');
+require_once('Views/view.php');
 
 class cma_bingo {
 
@@ -29,7 +30,7 @@ class cma_bingo {
 
             $this->width_pct = 100/self::GRID_SIZE;
             $this->square_ct = pow(self::GRID_SIZE,2);
-            $this->squares_model = new \Models\squares_model();
+            $this->squares_model = new squares_model();
 
         try {
             $this->squares_model->validate_str_length(self::STR_LEN_MAX);
@@ -43,7 +44,7 @@ class cma_bingo {
 
         $this->squares_arr = $this->squares_model->get_random($this->square_ct);
 
-        $view       = new \Views\view('Views/bingo.tpl');
+        $view       = new view('Views/bingo.tpl');
         $output     = '<div class="card">';
         $key        = 0;
 
